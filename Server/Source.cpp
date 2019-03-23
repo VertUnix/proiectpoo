@@ -30,7 +30,7 @@ void main()
 	//leg (Bind) IP-ul si portul de un socket
 	sockaddr_in hint;
 	hint.sin_family = AF_INET;
-	hint.sin_port = htons(54000);
+	hint.sin_port = htons(56010);
 	hint.sin_addr.S_un.S_addr = INADDR_ANY; //poate folosi de asemenea inet_pton...
 
 	bind(listening, (sockaddr*)&hint, sizeof(hint));
